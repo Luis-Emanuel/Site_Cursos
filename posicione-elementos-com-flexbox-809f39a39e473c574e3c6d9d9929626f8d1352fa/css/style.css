@@ -11,12 +11,23 @@ body {
 .cabecalhoPrincipal {
 	background-color: #FFF;
 	padding: 20px 0;
+	
 }
 
 .cabecalhoPrincipal-titulo {
 	font-weight: bold;
 	font-size: 2em;
 	margin-bottom: 20px;
+}
+
+.cabecalhoPrincipal .container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.cabecalhoPrincipal-nav{
+	display: flex;
 }
 
 .cabecalhoPrincipal-titulo a {
@@ -32,7 +43,6 @@ body {
 	text-decoration: none;
 	transition: .5s;
 	display: block;
-
 	border-bottom: 1px solid #9799A6;
 }
 
@@ -90,10 +100,29 @@ body {
 	background: url(../img/background2.svg) no-repeat;
 }
 
-
 .rodapePrincipal {
 	background-color: #324C64;
 	padding-top: 20px;
+}
+
+.rodapePrincipal-patrocinadores .container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 75%;
+}
+
+.rodapePrincipal-contatoForm{
+	width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+	display: flex;
 }
 
 .rodapePrincipal .subtitulo {
