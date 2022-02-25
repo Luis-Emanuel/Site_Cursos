@@ -37,13 +37,14 @@ body {
 
 .cabecalhoPrincipal-nav-link {
 	padding: 10px;
-	margin-bottom: 10px;
+	margin-left: 10px;
 	color: #9799A6;
 	background-color: #FFF;
 	text-decoration: none;
 	transition: .5s;
 	display: block;
-	border-bottom: 1px solid #9799A6;
+	border-radius: 5px;
+	border: 1px solid #9799A6;
 }
 
 .conteudoPrincipal {
@@ -108,8 +109,14 @@ body {
 }
 
 .conteudoPrincipal-cursos-link{
-	width: 23%;
-	margin-bottom: 1%;
+	width: 23%; 
+	margin: 1%;
+}
+.conteudoPrincipal-cursos-link:nth-child(4n){
+	margin-right: 0;
+}
+.conteudoPrincipal-cursos-link:nth-child(4n+1){
+	margin-left: 0;
 }
 
 .rodapePrincipal-navMap-list{
@@ -258,79 +265,24 @@ body {
 	margin-bottom: 10px;
 }
 
-@media(min-width: 769px) {
-
-	.container {
-		width: 85%;	
+@media(max-width: 769px) {
+	.cabecalhoPrincipal .container{
+		flex-direction: column;
+		align-items: initial;
+		text-align: center;
 	}
 
-	.subtitulo {
-		text-align: left;
-	}
+	.cabecalhoPrincipal-nav{
+		flex-direction: column;		
+	}	
 
-	.cabecalhoPrincipal-nav-link {
-		border-radius: 5px;
-		border: 1px solid #9799A6;
+	.cabecalhoPrincipal-nav-link{
+		border: 0px;
+		border-radius: 0px;
+		border-bottom: 1px solid #9799A6;
 	}
-
-	.cabecalhoPrincipal-nav-link:hover {
-		color: #FFF;
-		background-color: #9799A6;
-	}
-
-	.cabecalhoPrincipal-titulo {
-		margin: 0;
-	}
-
-	.cabecalhoPrincipal-nav {
-		width: auto;
-	}
-
-	.cabecalhoPrincipal-nav-link {
-		width: auto;
-		margin: 0 0 0 10px;
-	}
-
-	.rodapePrincipal-contatoForm {
-		margin-top: 0;
-		text-align: left;
-	}
-
-	.conteudoPrincipal-cursos-link:nth-child(3n) {
-		margin-right: 0;
-	}
-
-	.conteudoPrincipal-cursos-link:nth-child(3n+1) {
-		margin-left: 0;
-	}
-
 }
 
-@media(min-width: 1000px) {
-	.conteudoPrincipal-cursos-link {
-		margin: 1.333%;
-	}
 
-	.conteudoPrincipal-cursos-link:nth-child(3n) {
-		margin-right: 1.33%;
-	}
-
-	.conteudoPrincipal-cursos-link:nth-child(3n+1) {
-		margin-left: 1.333%;
-	}
-
-	.conteudoPrincipal-cursos-link:nth-child(4n) {
-		margin-right: 0;
-	}
-
-	.conteudoPrincipal-cursos-link:nth-child(4n+1) {
-		margin-left: 0;
-	}
-
-	.videoSobre-sobre {
-		margin-left: 1.5em;
-	}
-
-}
 
 
